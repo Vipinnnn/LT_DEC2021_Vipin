@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+body{
+    background: #C5ACF1;
+background: -webkit-linear-gradient(top, #C5ACF1, #CDD5EC);
+background: -moz-linear-gradient(top, #C5ACF1, #CDD5EC);
+background: linear-gradient(to bottom, #C5ACF1, #CDD5EC);
+    
+}
+
+/* Navbar Styling */
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+    
+    
+    
+}
+a{
+    text-decoration: none;
+    
+    
+    
+}
+a:hover{
+    background-color: hsl(278, 96%, 47%);
+    background-image: linear-gradient(45deg, #2f1930, #9a00d6);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    
+}
+nav{
+    
+    background-color: rgba(102, 51, 153, 0.486);
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    font-weight: 700;
+} 
+.logo{
+    float: left;
+    margin-right: 10px;
+}
+nav a{
+    color:black;
+    font-size: 22px;
+} 
+.navBrand{
+    margin: 5px 260px 5px 80px;
+    padding: 15px;
+    font-weight: 900;
+
+}
+.navbar{
+    overflow: hidden;
+}
+nav span {
+    background-color: hsl(278, 96%, 47%);
+    background-image: linear-gradient(45deg, #2f1930, #9a00d6);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+
+    font-family: 'waterfall', "cursive";
+    font-size: 2.7rem;
+
+}
+
+
+.navItems{
+    margin: 15px 15px;
+    padding: 15px;
+    
+    
+}
+.navBtns-Login{
+  
+    margin: 15px 15px 5px 60px;
+    padding: 15px;
+    border-radius: 3px;
+    
+    
+}
+.navBtns{
+  
+    margin: 15px 80px 5px 15px;
+    padding: 15px;
+    border-radius: 3px;
+    
+}
+.navBtns-Login:hover , .navBtns:hover{
+    border: black;
+    background-color: rgb(255, 255, 255);
+    
+}
+nav .bars{
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    font-size: 1.2rem;
+    display: none;
+}
+.dropbtn {
+    
+    
+    
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+   position: absolute;
+    
+    padding: 5px;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: -90px;
+    
+    z-index: 2; 
+}
+  
+
+
+/* Middle section */
+.container{
+    margin: 5%;
+   
+    
+}
+
+.dispSection{
+    
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    position: relative;
+    margin-top: 150px;
+    
+}
+.textAd {
+    font-size: 1.9rem;
+    
+}
+.textAd span{
+    background-color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(45deg, #000000, #a704e7);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent; 
+}
+.textAd p{
+    font-size: 1.2rem;
+    text-align: left;
+    width: 80%;
+    font-weight: 500;
+    margin: 25px 0;
+}
+.textAd button{
+    height: 50px;
+    width: 200px;
+    border: 2px solid rebeccapurple;
+    font-weight: 600;
+    font-size: medium;
+}
+.btn-1{
+    background-color: rebeccapurple;
+    color: white;
+}
+.btn-1:hover{
+    background-color: #cac5ee
+    ;
+    color: black;
+}
+.btn-2{
+    background-color:#cac5ee;
+}
+.btn-2:hover{
+    background-color: rebeccapurple;
+    color: white;
+}
+.imgDisplay img {
+    position: absolute;
+    right: 0px;
+    top: -80px;
+    z-index: -1;
+  }
+ 
+.outerCard{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    position: relative;
+    top: 60px;
+    background-color: #e4dbf3cc;
+    margin-top: 20px;
+    padding: 2%;
+    border-radius: 5px;
+}
+.Card{
+    margin-top: 10px;
+    padding: 5px;
+    height: auto;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    
+}
+.Card h2{
+    margin:  15px 0;
+}
+.Card img{
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    width: 60px;
+    padding: 10px;
+}
+.Card:hover{
+    background: #C5ACF1;
+    background: -webkit-linear-gradient(top, #C5ACF1, #CDD5EC);
+    background: -moz-linear-gradient(top, #C5ACF1, #CDD5EC);
+    background: linear-gradient(to bottom, #C5ACF1, #CDD5EC);
+}
+.features{
+    margin: 10px 0 0 100px;
+    
+}
+.features h3{
+    margin: 15px 0;
+}
+.section3{
+position: relative;
+    top: 100px;
+    font-size: 1.2rem;
+    
+
+}
+.section3 .topSellers{
+    background-color: #e4dbf3cc;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 5px;
+}
+.seller{
+    border-radius: 5px;
+    margin: 5%;
+    box-shadow: 8px 8px 12px 1px rgba(0, 0, 255, .2);
+    padding: 10px;
+}
+.seller h3{
+    text-align: center;
+    margin: 10px;
+}
+.seller:hover{
+    box-shadow: 2px 8px 12px 12px rgba(0, 0, 255, .2);
+    background: #C5ACF1;
+    background: -webkit-linear-gradient(top, #C5ACF1, #CDD5EC);
+    background: -moz-linear-gradient(top, #C5ACF1, #CDD5EC);
+    background: linear-gradient(to bottom, #C5ACF1, #CDD5EC);
+}
+.seller img{
+    width: 96%;
+    border-radius: 20px;
+    
+}
+
+
+.footer{
+    position: relative;
+    top: 120px;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 150px;
+    background-color: #e4dbf3cc;
+    border-radius: 5px;
+}
+.footer .block{
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.footer .block:hover{
+    background: #C5ACF1;
+    background: -webkit-linear-gradient(top, #C5ACF1, #CDD5EC);
+    background: -moz-linear-gradient(top, #C5ACF1, #CDD5EC);
+    background: linear-gradient(to bottom, #C5ACF1, #CDD5EC);
+}
+.footer h4{
+    
+    padding: 10px 0;
+}
+.footer .links a{
+    padding: 20px;
+}
+
+
+
+@media only screen and (max-width:1515px){
+    .navBrand{
+        margin: 5px 100px 5px 80px;
+        padding: 15px;
+        font-weight: 900;
+    
+    }
+    
+}
+@media only screen and (max-width:1415px){
+    .dispSection img{
+        width: 500px;
+        position: absolute;
+        top: -40px;
+        right: 60px;
+    
+    }
+    .dispSection{
+        margin-top: 100px;
+    }
+    .textAd{
+        font-size: 1.5rem;
+    }
+    .outerCard{
+        position: relative;
+        top: -10px;
+    }
+    
+}
+@media only screen and (max-width:1318px){
+    nav .navItems{
+        margin: 15px 5px;
+    }
+    .dispSection img{
+        width: 430px;
+    
+    }
+    .textAd{
+        font-size: 1.2rem;
+    }
+    .outerCard{
+        position: relative;
+        top: -10px;
+    }
+    
+}
+@media only screen and (max-width:1235px){
+    nav .navBtns{
+        margin: 15px 5px;
+    }
+   
+    
+}
+@media only screen and (max-width:1148px){
+    nav a{
+        font-size: 20px;
+        
+    }
+    nav .navBtns-Login{
+        margin: 15px 15px;
+    }
+    
+}
+@media only screen and (max-width:1148px){
+    nav a{
+        font-size: 20px;
+        
+    }
+    nav .navBtns-Login{
+        margin: 15px 13px;
+    }
+    .dispSection img{
+        width: 430px;
+        position: absolute;
+        top: -40px;
+        right: 40px;
+    
+    }
+    
+}
+@media only screen and (max-width:1065px){
+    .navBrand{
+        margin-right: 50px;
+    }
+}
+@media only screen and (max-width:1015px){
+    .navBrand{
+        margin-right: 20px;
+        margin-left: 50px;
+    }
+    nav span{
+        font-size: 2.2rem;
+    }
+    nav a{
+        font-size: 18px;
+
+        
+    }
+    .dispSection img{
+        width: 430px;
+        position: absolute;
+        top: -40px;
+        right: 20px;
+    
+    }
+    .textAd button{
+        width: 120px;
+        height: 35px;
+        font-weight: 300;
+    }
+    .textAd h1{
+        font-size: 2rem;
+    }
+
+}
+@media only screen and (max-width:886px) {
+    nav .navItems , .navBtns , .navBtns-Login{
+        padding: 10px;
+
+    }
+    .navBrand{
+        padding: 10px;
+        margin-left: 8px;
+    }
+    .dispSection img{
+        width: 365px;
+        position: absolute;
+        top: -40px;
+        right: 20px;
+    }
+    .dispSection h1{
+        font-size: 1.8rem;
+    }
+    .dispSection p{
+        font-size: 1rem;
+    }
+
+
+ 
+}
+
+        
+        
+    
+
+@media screen and (max-width: 786px) {
+    .toggleMenu .tglNav  {display: none;}
+    .navbar .bars {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the toggleMenu with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 786px) {
+    .toggleMenu.responsive li.tglNav {
+        display: block;
+        position: relative;
+        width: 100%;
+        background-color: rgb(191, 144, 238);
+        top: 0;
+        left: 0px;
+        margin: 2px ;
+        text-align: center;
+        
+        
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-top: 3px;
+        
+        z-index: 2; 
+    }
+    .dispSection{
+        margin: 50px 0;
+    }
+    .dispSection img{
+        top: 0px;
+        width: 330px;
+
+    }
+    
+    
+    .outerCard{
+        position: relative;
+        top: -40px;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media screen and (max-width: 650px){
+      .dispSection{
+          grid-template-columns: repeat(1,1fr);
+      }
+      .dispSection img{
+          position: absolute;
+          left: 20px;
+          opacity: 0.2;
+      }
+
+      .outerCard{
+        grid-template-columns: repeat(1,1fr);
+    }
+  
+    .Card{
+        font-size: medium;
+    }
+    .Card h2{
+        text-align: center;
+    }
+    .Card.main p{
+        margin-left: 30px;
+    }
+    .section3 .topSellers{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+
